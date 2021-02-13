@@ -1,0 +1,2 @@
+Required:
+https://optitrack.com/software/natnet-sdk/

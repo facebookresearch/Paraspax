@@ -1,0 +1,15 @@
+Genelec_8020_directivity.mat 
+This file describes the directivity of the Genelec8020 loudspeaker in SH domain.
+The directivity measurements, which are the source for the Genelec_8020_directivity.mat file, are part of the BRAS database [1], see also [2], licensed under Creative Commons BY-SA 4.0.
+
+The source measurements from [1] were converted to SH domain using the script "QSC_K8_directivity.m" from AKtools[3] (AKtools/0_DemoData/QSC_K8_directivity.m)
+
+
+[1] L. Aspöck, F. Brinkmann, D. Ackermann, S. Weinzierl, and M. Vorländer, 
+“BRAS - Benchmark for Room Acoustical Simulation.” 2019.
+DOI: http://dx.doi.org/10.14279/depositonce-6726.3 
+
+[2] F. Brinkmann, L. Aspöck, D. Ackermann, R. Opdam, M. Vorländer, and S. Weinzierl, “A benchmark for room acoustical simulation. Concept and database,” Appl. Acoust., vol. 176, p. 107867, 2021.
+DOI: https://doi.org/10.1016/j.apacoust.2020.107867
+
+[3] F. Brinkmann and S. Weinzierl, “AKtools - an open software toolbox for signal acquisition, processing, and inspection in acoustics,” in Proceedings of the 142nd AES Convention, Berlin, Germany, 2017, pp. 1–6.

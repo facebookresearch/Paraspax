@@ -1,0 +1,1 @@
+In original measurement, source 3 was the source on the right (4th source when counting from left to right) and source 4 was the source in the back (3rd source when counting from left to right). This is changed now, so that it is source 1-4 as counted from left to right.
