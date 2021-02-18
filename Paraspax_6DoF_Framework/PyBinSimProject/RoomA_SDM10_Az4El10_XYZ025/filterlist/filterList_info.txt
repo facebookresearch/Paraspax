@@ -1,0 +1,1 @@
+Please unzip filterList. Uncompressed TXT file is > 100MB and thus not suitable for Github.

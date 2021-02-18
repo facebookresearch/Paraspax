@@ -1,0 +1,1 @@
+The synthesized BRIRs for this experiment have a size of around 34 GB (tar compressed!) and can thus not be uploaded to Github. However, we provide the script here to generate the BRIRs (and the corresponding PyBinSim filter list) used for the experiment.
