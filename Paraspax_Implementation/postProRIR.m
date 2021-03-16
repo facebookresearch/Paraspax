@@ -88,6 +88,9 @@ if isempty(doa)
     end
     %Shift 5 ms
     rirCutHead = rirOnset - ceil(0.005*fs);
+    if rirCutHead < 1
+        rirCutHead = 1;
+    end
     %Cut head
     rir_post = rir(rirCutHead:end,:);
 
