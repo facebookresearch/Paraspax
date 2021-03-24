@@ -3,7 +3,7 @@
 %% -- Paraspax --
 %  -- Parameterization, Spatialization, and Extrapolation 
 %     of Monaural Room Impulse Responses --
-%
+%q
 % function connectToOptitrack();
 %
 % Function to connect to the Natnet OptiTrack SDK
