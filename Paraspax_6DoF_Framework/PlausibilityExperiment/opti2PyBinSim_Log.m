@@ -58,7 +58,7 @@ sphGridRad = sphGrid * pi / 180;
 [xSphGrid,ySphGrid,zSphGrid] = sph2cart(sphGridRad(:,1),sphGridRad(:,2),1);
 
 %Init variables required later
-natnetclient = connect_to_optitrack();
+natnetclient = connectToOptitrack();
 %get information on the tracked objects:
 model = natnetclient.getModelDescription;
 %set listener information (and Optitrack tracking model names):
