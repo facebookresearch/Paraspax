@@ -47,6 +47,8 @@ if isfield(psx.brir,'sourceDirectivity')
     sourceDirectivity = psx.brir.sourceDirectivity;
     directivityFilterLength = psx.brir.directivityFilterLength;
     applyDirectivity = true;
+else
+    applyDirectivity = false;
 end
 if isfield(psx.filter,'measFilt')
     measFilt = psx.filter.measFilt;
