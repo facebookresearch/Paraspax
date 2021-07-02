@@ -4,7 +4,7 @@
 %  -- Parameterization, Spatialization, and Extrapolation 
 %     of Monaural Room Impulse Responses --
 %
-% function rir_post = postProRIR(rir,fs,fsTarget,normValue,sourceDistance,doa)
+% function rir_post = postProRIR(rir,fs,fsTarget,normValue,sourceDistance,tailWin,doa)
 %
 % This function applies basic post processing to raw measurement data.
 % Input can be single channel (monaural RIR) or two channel (BRIR).
@@ -30,6 +30,12 @@
 %                         to given source distance. Set to 0 if no shift of
 %                         RIR should be applied
 %                         Default: 0 (no shift)
+% tailWin               - Define if small window of 5 ms, which is by default
+%                         applied to the head and tail of the RIR, should 
+%                         be applied to the tail of the RIR or not.
+%                         For RT60 estimation, it is sometimes better to
+%                         not apply a tail window.
+%                         Default: true (tail window applied)
 % doa                   - If DOA vector from SDM analysis is passed, RIR is
 %                         only normalized and shifted according to source
 %                         distance (better for extrapolation) and DOA
@@ -44,7 +50,7 @@
 % Code written 2019/2020 by JMA, Johannes M. Arend.
 
 
-function [rir_post,doa_post] = postProRIR(rir,fs,fsTarget,normValue,sourceDistance,doa)
+function [rir_post,doa_post] = postProRIR(rir,fs,fsTarget,normValue,sourceDistance,tailWin,doa)
 
 if size(rir,2) > size(rir,1)
     rir = rir.';
@@ -66,7 +72,11 @@ if nargin < 5 || isempty(sourceDistance)
     sourceDistance = 0; % no shift
 end
 
-if nargin < 6 || isempty(doa)
+if nargin < 6 || isempty(tailWin)
+    tailWin = true; %apply tail window
+end
+
+if nargin < 7 || isempty(doa)
     doa = []; % no DOA vector related processing
 end
 
@@ -105,16 +115,35 @@ if isempty(doa)
     end
     %Shift 5 ms
     rirCutTail = rirCutTail+0.005*fs;
+    
+    %Catch errors of noise detection
+    if rirCutTail > size(rir_post,1)
+        rirCutTail = size(rir_post,1);
+    end
+    
     %Cut tail
     rir_post = rir_post(1:rirCutTail,:);
 
     %Apply 5 ms window to head and tail
-    win = supdeq_win(length(rir_post),[floor(0.005*fs)-1,floor(0.005*fs)-1]);
-    if brir
-        rir_post(:,1) = rir_post(:,1).*win;
-        rir_post(:,2) = rir_post(:,2).*win;
-    else
-        rir_post = rir_post.*win;
+    if tailWin %Both-sided window
+        win = supdeq_win(length(rir_post),[floor(0.005*fs)-1,floor(0.005*fs)-1]);
+        if brir
+            rir_post(:,1) = rir_post(:,1).*win;
+            rir_post(:,2) = rir_post(:,2).*win;
+        else
+            rir_post = rir_post.*win;
+        end
+    end
+    
+    %Apply 5 ms window to head
+    if ~tailWin %One-sided window
+        win = supdeq_win(length(rir_post),[floor(0.005*fs)-1,0]);
+        if brir
+            rir_post(:,1) = rir_post(:,1).*win;
+            rir_post(:,2) = rir_post(:,2).*win;
+        else
+            rir_post = rir_post.*win;
+        end
     end
 
     %Apply resampling if desired
