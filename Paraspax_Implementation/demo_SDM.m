@@ -13,12 +13,14 @@
 %
 % References:
 % [1] J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, 
-% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on 
-% One Monaural Room Impulse Response,�? Submitted for publication, 2020.
+% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” 
+% J. Audio Eng. Soc., vol. 69, no. 7/8, pp. 557–575, 2021. ﻿
+% https://doi.org/10.17743/jaes.2021.0009
 %
 %﻿[2] S. V. Amengual Garí, J. M. Arend, P. Calamia, and P. W. Robinson, 
-% “Optimizations of the Spatial Decomposition Method for 
-% Binaural Reproduction (in press),�? J. Audio Eng. Soc., 2020.
+% “Optimizations of the Spatial Decomposition Method for Binaural Reproduction,” 
+% J. Audio Eng. Soc., vol. 68, no. 12, pp. 959–976, 2020.
+% https://doi.org/10.17743/jaes.2020.0063
 %   
 % Code written 2019/2020 by JMA, Johannes M. Arend.
 

@@ -17,9 +17,10 @@
 % Dependencies: Natnetbib from OptiTrack, OptiTrack
 %
 % References:
-% [1] J. M. Arend, S. V. Amengual GarÃ­, C. Schissler, F. Klein, and P. W. Robinson, 
-% âSix-Degrees-of-Freedom Parametric Spatial Audio Based on 
-% One Monaural Room Impulse Response,â? Submitted for publication, 2020.
+% [1] J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, 
+% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” 
+% J. Audio Eng. Soc., vol. 69, no. 7/8, pp. 557–575, 2021. ﻿
+% https://doi.org/10.17743/jaes.2021.0009
 %
 % Code written 2019/2020 by JMA, Johannes M. Arend.
 

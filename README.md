@@ -8,15 +8,19 @@ The encoding is based on three basic processing steps. The parametrization provi
 The synthesized BRIRs can be employed for a 6-DoF real-time virtual acoustic environment (VAE), which can be used, for example, for demo applications or perceptual studies on AR audio. The Paraspax toolbox provides a Matlab- and Python-based framework to implement such a 6-DoF VAE.
 
 For more details, please see:  
-Arend, J. M., Amengual Garí, S. V., Schissler, C., Klein, F., & Robinson, P. W. (2021). Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response. Submitted for Publication.
+Arend, J. M., Amengual Garí, S. V., Schissler, C., Klein, F., & Robinson, P. W. (2021). Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response. *J. Audio Eng. Soc.*, 69(7/8), 557–575. https://doi.org/10.17743/jaes.2021.0009
 
 ## Citing Paraspax
 
 ```
-@article{Arend2020,
+@article{Arend2021c,
 author = {Arend, Johannes M. and {Amengual Gar{\'{i}}}, Sebasti{\`{a}} V. and Schissler, Carl and Klein, Florian and Robinson, Philip W.},
-journal = {Submitted for publication},
+doi = {https://doi.org/10.17743/jaes.2021.0009},
+journal = {J. Audio Eng. Soc.},
+number = {7/8},
+pages = {557--575},
 title = {{Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response}},
+volume = {69},
 year = {2021}
 }
 

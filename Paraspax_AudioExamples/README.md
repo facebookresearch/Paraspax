@@ -1,5 +1,5 @@
 Supplementary material (audio examples) for:   
-J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” Submitted for publication.
+Arend, J. M., Amengual Garí, S. V., Schissler, C., Klein, F., & Robinson, P. W. (2021). Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response. *J. Audio Eng. Soc.*, 69(7/8), 557–575. https://doi.org/10.17743/jaes.2021.0009
 
 The folder `BinauralRenderings` contains binaural renderings based on binaural room impulse responses (BRIRs) synthesized with the Paraspax method as described in the manuscript. The BRIRs were synthesized based on one monaural room impulse response (RIR) measured for each sound source at position 10 of the grid. The spatialization was done based on a 2nd order image source model, as described in the manuscript. 
 

@@ -7,8 +7,8 @@
 % function psx = extrapolate(psx)
 %
 % Function to extrapolate parameters of spatialized RIR to new listener
-% position. Extrapolation defined by X Y Z vector leading to a relative 
-% shift of receiver in relation to source.
+% position as proposed in [1]. Extrapolation defined by X Y Z vector leading 
+% to a relative shift of receiver in relation to source.
 %
 % Output:
 % psx                   - psx struct with extrapolated parameters in 
@@ -18,6 +18,12 @@
 % psx                   - psx struct with required fields
 %
 % Dependencies: AKtools
+%
+% References:
+% [1] J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, 
+% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” 
+% J. Audio Eng. Soc., vol. 69, no. 7/8, pp. 557–575, 2021. ﻿
+% https://doi.org/10.17743/jaes.2021.0009
 %   
 % Code written 2019/2020 by JMA, Johannes M. Arend.
 

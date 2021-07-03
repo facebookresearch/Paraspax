@@ -8,7 +8,7 @@
 %
 % Function to randomize the conditions of the 6-DoF plausibility experiment 
 % for the respective participant. For more details on the Paraspax real-time 
-% frameweork and the Plausibility study, see [1].
+% framework and the plausibility study, see [1].
 %
 % Output:
 % -                   
@@ -22,8 +22,9 @@
 %
 % References:
 % [1] J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, 
-% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on 
-% One Monaural Room Impulse Response,�? Submitted for publication, 2020.
+% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” 
+% J. Audio Eng. Soc., vol. 69, no. 7/8, pp. 557–575, 2021. ﻿
+% https://doi.org/10.17743/jaes.2021.0009
 %
 % Code written 2019/2020 by JMA, Johannes M. Arend.
 

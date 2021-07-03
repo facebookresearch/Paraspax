@@ -11,8 +11,9 @@
 %
 % References:
 % [1] J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, 
-% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on 
-% One Monaural Room Impulse Response,” Submitted for publication, 2020.
+% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” 
+% J. Audio Eng. Soc., vol. 69, no. 7/8, pp. 557–575, 2021. ﻿
+% https://doi.org/10.17743/jaes.2021.0009
 %
 % Code written 2019/2020 by JMA, Johannes M. Arend.
 %
@@ -22,6 +23,8 @@
 % This source code is licensed under the license found in the
 % LICENSE file in the root directory of this source tree. 
 
+
+%%
 %Choose src and rec position
 %Data in the git are only available for recPosID = 10 and srcPosID = 1:4
 for recPosID = 10 %Position 10 used for demo and experiment

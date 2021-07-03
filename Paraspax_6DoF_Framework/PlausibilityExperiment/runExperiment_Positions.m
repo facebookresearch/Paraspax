@@ -7,8 +7,8 @@
 % function function runExperiment_Positions(midiTimer)
 %
 % Function to run and control the 3-DoF plausibility experiment with MIDI device.
-% Gets called from Paraspax_PlausibilityExperiemnt script. For more details on the Paraspax real-time frameweork and the Plausibility 
-% study, see [1]. 'Positions' is for a 3-DoF plausibility study.
+% Gets called from Paraspax_PlausibilityExperiemnt script. For more details on the 
+% Paraspax real-time framework and the plausibility study, see [1]. 'Positions' is for a 3-DoF plausibility study.
 %
 % Dependencies: oscsend, global variable 'sh' and 'binsim' providing
 % information about udp and cartesian/spherical grid, Natnetbib from
@@ -16,11 +16,11 @@
 %
 % References:
 % [1] J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, 
-% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on 
-% One Monaural Room Impulse Response,�? Submitted for publication, 2020.
+% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” 
+% J. Audio Eng. Soc., vol. 69, no. 7/8, pp. 557–575, 2021. ﻿
+% https://doi.org/10.17743/jaes.2021.0009
 %
 % Code written 2019/2020 by JMA, Johannes M. Arend.
-
 
 
 function runExperiment_Positions(midiTimer)

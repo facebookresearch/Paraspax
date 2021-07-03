@@ -9,7 +9,7 @@
 % Function to synthesize BRIRs based on the parameterized monaural RIR.
 % BRIRs can be synthesized for measurement point or extrapolated point.
 % Passing a array with head orientations synthesized BRIRs for all passed
-% head orientations.
+% head orientations. For more details, see [1].
 %
 % Output:
 % psx                   - psx struct with synthesized BRIRs in psx.brir field
@@ -18,6 +18,12 @@
 % psx                   - psx struct with required fields in psx.brir
 %
 % Dependencies: SUpDEq toolbox, AKtools
+%
+% References:
+% [1] J. M. Arend, S. V. Amengual Garí, C. Schissler, F. Klein, and P. W. Robinson, 
+% “Six-Degrees-of-Freedom Parametric Spatial Audio Based on One Monaural Room Impulse Response,” 
+% J. Audio Eng. Soc., vol. 69, no. 7/8, pp. 557–575, 2021. ﻿
+% https://doi.org/10.17743/jaes.2021.0009
 %   
 % Code written 2019/2020 by JMA, Johannes M. Arend.
 
