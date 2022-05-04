@@ -48,7 +48,7 @@ sEnd = length(x)-winSize/2;
 
 smean = nan(size(x,1),size(x,2));
 for kk = sStart:sEnd
-    smean(kk,:) = nanMean(x(kk-winSize/2:kk+winSize/2-1,:));
+    smean(kk,:) = mean(x(kk-winSize/2:kk+winSize/2-1,:),'omitnan');
 end
 smean = smean(winSize/2+1:end-winSize/2,:);
 
