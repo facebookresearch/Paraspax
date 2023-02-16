@@ -13,11 +13,10 @@
 % (SH coordinates / colatitude), thus supporting frontal head orientation by default.
 %
 % Output:
-% gaussGrid         - Array with corresponding gaussGrid in SH
-%                     coordinates
-%                     [azDEG, elDEG]  
+% equiangleGrid     - Array with corresponding equiangular grid with azimuth 
+%                     and colatitude 
 % nPoints           - Total umber of grid points
-%
+% 
 % Input: 
 % azResolution      - Azimuth resolution
 %                     azResolution = 1 --> Steps of 1° in the horizontal
