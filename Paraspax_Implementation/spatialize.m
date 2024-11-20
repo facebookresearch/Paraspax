@@ -43,7 +43,6 @@ if ~isfield(psx.geo,'doa') %Probably not available in SDM applied
     sourceDirection = psx.geo.sourceDirection; %Direction [az el] of direct sound
 end
 %% Perform ISM simulation if required geometrical information is available and if intended
-
 %If no DOA information but room dimensions available
 if ~isfield(psx.geo,'doa') && psx.geo.roomDimensions
     
@@ -153,8 +152,11 @@ if ~isfield(psx.geo,'doa') && psx.geo.roomDimensions
     refListSpat.SE_GN2 = nan(length(refListSpat.toa),2);
     usedID = nan(length(refListSpat.toa),1);
     for kk = 1:length(refListSpat.toa)
-        td = refListSpat.toa(kk)-d;
+        
+        % ignore direct sound, hence d(2:end) and id + 1 (below)
+        td = refListSpat.toa(kk)-d(2:end);
         [~,id] = min(abs(td));
+        id = id + 1;
         
         %Check if id was alread used, and assign next closest ID if it was
         %already used...
@@ -163,7 +165,7 @@ if ~isfield(psx.geo,'doa') && psx.geo.roomDimensions
             zz = zz+1;
             nc = unique(abs(td));
             ncID = nc(zz);
-            id = find(abs(td) == ncID);
+            id = find(abs(td) == ncID) + 1;
         end
         %Finally save ID not used before
         usedID(kk) = id;    
